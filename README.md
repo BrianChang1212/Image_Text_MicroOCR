@@ -53,7 +53,7 @@ Unit tests only (skip integration):
 ```
 20260407_Image_Text_MicroOCR/
 ├── docs/                 # Notes / specs (optional)
-├── release/              # Sync area: sync_from_dev_build.ps1, verify_image_text\ (exe, _internal, scripts, config, doc, README.txt)
+├── release/              # README.md / README.zh-TW.md; sync_from_dev_build.ps1; verify_image_text\ (exe, _internal, scripts, config, doc, README.txt)
 ├── source/
 │   ├── requirements.txt
 │   ├── requirements-dev.txt  # pytest (optional)
@@ -278,7 +278,7 @@ Sync built tree into repo `release\verify_image_text\` (optional):
 .\build_pyinstaller_release.ps1 -SyncToRelease
 ```
 
-See `release\README.md` for release policy. Inside the bundle, **`README.txt`** and **`doc\OCR_README_FOR_USERS.txt`** are **English-first**, with a **Traditional Chinese supplement** section at the end. Sample **`config\extract_config.example.json`** uses English `description` plus optional `description_zh_TW`.
+Maintainer release notes: **`release/README.md`** (English) and **`release/README.zh-TW.md`** (Traditional Chinese). Inside the shipped bundle, **`README.txt`** and **`doc\OCR_README_FOR_USERS.txt`** are **English-first** with a **Traditional Chinese supplement**. Sample **`config\extract_config.example.json`** uses English `description` plus optional `description_zh_TW`.
 
 ## Data shapes
 
@@ -480,3 +480,4 @@ Remote: [BrianChang1212/Image_Text_MicroOCR](https://github.com/BrianChang1212/I
 - 2026-04-07: `source\tests\`, `pytest.ini`, `requirements-dev.txt`; bundle `README.txt` quick start aligned with `doc\OCR_README_FOR_USERS.txt` (incl. `run_ocr.bat`).
 - 2026-04-07: README split: English primary (`README.md`), Traditional Chinese (`README.zh-TW.md`).
 - 2026-04-07: Release bundle `README.txt`, `doc/OCR_README_FOR_USERS.txt`, and `extract_config.example.json` — English primary, Traditional Chinese supplement; templates and `release/verify_image_text/` synced.
+- 2026-04-07: `release/README.md` (English) + `release/README.zh-TW.md` (Traditional Chinese) for maintainer handoff.

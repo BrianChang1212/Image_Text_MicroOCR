@@ -53,7 +53,7 @@ cd d:\Brian\projects\Personal\20260407_Image_Text_MicroOCR\source
 ```
 20260407_Image_Text_MicroOCR/
 ├── docs/                 # 規格與分析（可自行補充）
-├── release/              # 發行包同步區：sync_from_dev_build.ps1、verify_image_text\（exe、_internal、scripts、config、doc、README.txt）
+├── release/              # README.md／README.zh-TW.md；sync_from_dev_build.ps1；verify_image_text\（exe、_internal、scripts、config、doc、README.txt）
 ├── source/
 │   ├── requirements.txt
 │   ├── requirements-dev.txt  # pytest（可選）
@@ -283,7 +283,7 @@ REM 或: scripts\run_ocr.bat "D:\photo\label.png" --dump-json
 .\build_pyinstaller_release.ps1 -SyncToRelease
 ```
 
-發行目錄說明與 Git 策略見 `release\README.md`。套件內 **`README.txt`**、**`doc\OCR_README_FOR_USERS.txt`** 以**英文為主**，文末附**繁體中文補充**；**`config\extract_config.example.json`** 以英文 `description` 為主，可選填 `description_zh_TW`。
+發行目錄說明與 Git 策略見 **`release/README.md`**（英文）、**`release/README.zh-TW.md`**（繁體中文）。套件內 **`README.txt`**、**`doc\OCR_README_FOR_USERS.txt`** 仍為英文為主＋文末繁中補充；**`config\extract_config.example.json`** 以英文 `description` 為主，可選填 `description_zh_TW`。
 
 ## 資料結構介紹
 
@@ -496,3 +496,4 @@ flowchart TB
 - 2026-04-07：`source\tests\` + `pytest.ini`、`requirements-dev.txt`，README 補「自動化測試」；發行包根 `README.txt` Quick start 與 `doc\OCR_README_FOR_USERS.txt` 對齊（含 `run_ocr.bat`）。
 - 2026-04-07：文件拆為英文主檔 [README.md](README.md) 與本繁體中文檔 `README.zh-TW.md`。
 - 2026-04-07：發行包 `README.txt`、`doc\OCR_README_FOR_USERS.txt`、`extract_config.example.json` 改為英文為主、文末繁中補充；已同步 `tool\templates\` 與 `release\verify_image_text\`。
+- 2026-04-07：`release\README.md`（英文）與 `release\README.zh-TW.md`（繁體中文）分檔（維護者／交付說明）。
