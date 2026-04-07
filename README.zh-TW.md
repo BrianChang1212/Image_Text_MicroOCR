@@ -283,7 +283,7 @@ REM 或: scripts\run_ocr.bat "D:\photo\label.png" --dump-json
 .\build_pyinstaller_release.ps1 -SyncToRelease
 ```
 
-發行目錄說明與 Git 策略見 `release\README.md`。套件內 **`doc\OCR_README_FOR_USERS.txt`** 為給終端使用者的精簡操作與結束碼說明（與本檔互補）。
+發行目錄說明與 Git 策略見 `release\README.md`。套件內 **`README.txt`**、**`doc\OCR_README_FOR_USERS.txt`** 以**英文為主**，文末附**繁體中文補充**；**`config\extract_config.example.json`** 以英文 `description` 為主，可選填 `description_zh_TW`。
 
 ## 資料結構介紹
 
@@ -495,3 +495,4 @@ flowchart TB
 - 2026-04-07：發行包目錄分類為 `scripts\`、`config\`、`doc\` + 根目錄 `README.txt`（exe/`_internal` 仍在根目錄）。
 - 2026-04-07：`source\tests\` + `pytest.ini`、`requirements-dev.txt`，README 補「自動化測試」；發行包根 `README.txt` Quick start 與 `doc\OCR_README_FOR_USERS.txt` 對齊（含 `run_ocr.bat`）。
 - 2026-04-07：文件拆為英文主檔 [README.md](README.md) 與本繁體中文檔 `README.zh-TW.md`。
+- 2026-04-07：發行包 `README.txt`、`doc\OCR_README_FOR_USERS.txt`、`extract_config.example.json` 改為英文為主、文末繁中補充；已同步 `tool\templates\` 與 `release\verify_image_text\`。

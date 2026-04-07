@@ -1,7 +1,8 @@
 {
   "version": 1,
   "name": "my_custom_readings",
-  "description": "Copy this file, edit regex/key, place next to verify_image_text.exe or pass full path.",
+  "description": "Copy this file, edit regex and key fields, place next to verify_image_text.exe or pass the full path on the command line.",
+  "description_zh_TW": "請複製本檔後修改 regex 與 key；可放在 verify_image_text.exe 同目錄，或在指令列傳入設定檔完整路徑。",
   "strategy": "largest_bbox_first",
   "success_requires_all_fields": true,
   "fields": [
