@@ -478,6 +478,13 @@ flowchart TB
 - [RapidOCR 安裝說明](https://rapidai.github.io/RapidOCRDocs/main/install_usage/rapidocr/install/)：`pip install onnxruntime` 與 `pip install rapidocr`；預設使用 ONNX Runtime CPU；whl 內含輕量模型。
 - 若需更小或不同模型，可執行 `rapidocr config` 產生 YAML，將 `Det.model_type` 等設為 `mobile` 後以 `RapidOCR(config_path="...")` 載入（見[使用說明](https://rapidai.github.io/RapidOCRDocs/main/install_usage/rapidocr/usage/)）。
 
+## Git 分支與提交訊息（開發者）
+
+遠端儲存庫：[BrianChang1212/Image_Text_MicroOCR](https://github.com/BrianChang1212/Image_Text_MicroOCR)。
+
+- **分支**：`main` 為穩定線；日常開發請以 **`develop`** 為基線（或從 `develop` 開 feature branch），再透過 PR／merge 合回 `main`。
+- **Commit message**：請**一律使用英文**撰寫（標題簡短、祈使語氣，例如 `Add pytest for extract_rules`）；細節放在正文段落，避免中英混在單一 subject 行。
+
 ## 進度
 
 - 2026-04-07：建立專案骨架、`verify_image_text.py`、安裝腳本與範例期望 JSON。
