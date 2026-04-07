@@ -1,0 +1,23 @@
+# Python / venv
+source/.venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+source/dist/
+source/build/
+*.spec.bak
+
+# Editor / OS
+Thumbs.db
+Desktop.ini
+*.log
+.vscode/
+.idea/
+
+# Windows 發行包本體（體積大；維護說明與腳本仍在 release/）
+release/verify_image_text/

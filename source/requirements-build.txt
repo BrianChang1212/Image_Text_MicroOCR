@@ -1,0 +1,2 @@
+# Build-time only: Windows exe packaging
+pyinstaller>=6.3.0

@@ -1,0 +1,4 @@
+# Inference: ONNX Runtime (CPU). GPU: install onnxruntime-gpu instead.
+onnxruntime>=1.17.0
+# RapidOCR: bundled mobile-friendly ONNX models (see docs).
+rapidocr>=2.0.6

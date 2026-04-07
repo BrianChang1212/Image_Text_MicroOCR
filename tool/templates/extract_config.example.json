@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "my_custom_readings",
+  "description": "Copy this file, edit regex/key, place next to verify_image_text.exe or pass full path.",
+  "strategy": "largest_bbox_first",
+  "success_requires_all_fields": true,
+  "fields": [
+    {
+      "key": "temperature_c",
+      "regex": "(-?\\d+\\.?\\d*)\\s*°\\s*C",
+      "regex_flags": ["IGNORECASE"],
+      "value_type": "float",
+      "group": 1
+    },
+    {
+      "key": "humidity_percent",
+      "regex": "(-?\\d+\\.?\\d*)\\s*%",
+      "value_type": "float",
+      "group": 1
+    }
+  ],
+  "optional_fields": []
+}

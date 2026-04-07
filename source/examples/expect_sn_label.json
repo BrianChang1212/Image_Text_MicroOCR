@@ -1,0 +1,5 @@
+{
+  "must_contain_all": ["SN"],
+  "must_contain_number_regex": "\\d{4,}",
+  "min_line_confidence": 0.5
+}

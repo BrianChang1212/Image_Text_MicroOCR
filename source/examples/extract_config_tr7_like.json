@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "tr7-monitor-like",
+  "description": "Same idea as --extract tr7-monitor: big-display °C and % first (largest bbox).",
+  "strategy": "largest_bbox_first",
+  "success_requires_all_fields": true,
+  "fields": [
+    {
+      "key": "temperature_c",
+      "regex": "(-?\\d+\\.?\\d*)\\s*°\\s*C",
+      "regex_flags": ["IGNORECASE"],
+      "value_type": "float",
+      "group": 1
+    },
+    {
+      "key": "humidity_percent",
+      "regex": "(-?\\d+\\.?\\d*)\\s*%",
+      "value_type": "float",
+      "group": 1
+    }
+  ],
+  "optional_fields": [
+    {
+      "key": "timestamp",
+      "regex": "\\b([A-Za-z]{3}-\\d{1,2}-\\d{4}\\s+\\d{1,2}:\\d{2}:\\d{2})\\b",
+      "value_type": "string",
+      "group": 1
+    }
+  ]
+}
